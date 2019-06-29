@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="หน้าหลัก"/>
+
+        <item
+            android:id="@+id/nav_edit"
+            android:icon="@drawable/ic_edit_user"
+            android:title="แก้ไขข้อมูลส่วนตัว"/>
+
+        <item
+            android:id="@+id/nav_ListCoures"
+            android:icon="@drawable/ic_timetable"
+            android:title="ตารางเรียน" />
+
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/ic_test"
+            android:title="ผลประเมิน" />
+
+        <item
+            android:id="@+id/nav_testtutor"
+            android:icon="@drawable/ic_test"
+            android:title="ผลประเมิน" />
+
+
+        <item
+            android:id="@+id/nav_pay"
+            android:icon="@drawable/ic_payment"
+            android:title="รายการชำระเงิน"/>
+
+        <item
+            android:id="@+id/nav_qr"
+            android:icon="@drawable/ic_qr_code"
+            android:title="คิวอาร์โค้ด" />
+
+        <item
+            android:id="@+id/nav_Rollcall"
+            android:icon="@drawable/ic_rollcall"
+            android:title="ตรวจสอบการเข้าเรียน" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="แชท" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact"
+            android:title="ติดต่อ" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_Chat"-->
+            <!--android:icon="@drawable/ic_chat"-->
+            <!--android:title="แชท" />-->
+
+        <!--<item-->
+
+        <!--android:id="@+id/nav_assessment"-->
+        <!--android:icon="@drawable/ic_menu_contact"-->
+        <!--android:title="Contact" />-->
+
+        <item
+            android:id="@+id/nav_Logout"
+            android:icon="@drawable/ic_logout"
+            android:title="ออกจากระบบ" />
+
+    </group>
+
+</menu>

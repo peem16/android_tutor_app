@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin">
+
+    <RelativeLayout
+        android:layout_width="475dp"
+        android:layout_height="640dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503">
+
+        <ImageView
+            android:id="@+id/boxUserDetail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/boxregis" />
+
+        <TextView
+            android:id="@+id/txtUserDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="81dp"
+            android:text="แก้ไขข้อมูลส่วนตัว"
+            android:textColor="#ef67a7"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgBtnChangPic"
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="136dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_addpic" />
+
+        <TextView
+            android:id="@+id/txtBtnChangPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="194dp"
+            android:text="อัปโหลดรูปภาพ"
+            android:textColor="#FF8B8B"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtFirstname2"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="219dp"
+            android:gravity="center_vertical"
+            android:text="ชื่อ :"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTxtFirstname2"
+            android:layout_width="213dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/txtFirstname2"
+            android:layout_marginEnd="98dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtLastname2"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtFirstname2"
+            android:layout_marginTop="265dp"
+            android:gravity="center_vertical"
+            android:text="นามสกุล :"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTxtLastname2"
+            android:layout_width="213dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtFirstname2"
+            android:layout_alignTop="@+id/txtLastname2"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtEmail2"
+            android:layout_width="54dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtFirstname2"
+            android:layout_marginBottom="291dp"
+            android:gravity="center_vertical"
+            android:text="อีเมล์ :"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTxtEmail2"
+            android:layout_width="213dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtFirstname2"
+            android:layout_alignTop="@+id/txtEmail2"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imgPhone2"
+            android:src="@drawable/ic_phone"
+            android:layout_width="20dp"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtFirstname2"
+            android:layout_marginBottom="247dp"
+            app:srcCompat="@drawable/ic_phone" />
+
+        <EditText
+            android:id="@+id/editTxtPhone2"
+            android:layout_width="213dp"
+            android:layout_height="34dp"
+            android:maxLength="10"
+            android:layout_alignStart="@+id/editTxtFirstname2"
+            android:layout_alignTop="@+id/imgPhone2"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="phone"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtAddress2"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtFirstname2"
+            android:layout_marginBottom="203dp"
+            android:gravity="center_vertical"
+            android:text="ที่อยู่ :"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTxtAddress2"
+            android:layout_width="213dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtFirstname2"
+            android:layout_alignTop="@+id/txtAddress2"
+            android:background="@drawable/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnChangPass"
+            android:layout_width="124dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="166dp"
+            android:background="@drawable/custom_button_round_rect_border"
+            android:text="เปลี่ยนรหัสผ่าน"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnConEditUser"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="127dp"
+            android:background="@drawable/custom_button_round_rect_border"
+            android:text="ยืนยัน"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin">
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:background="@drawable/boxregis"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="317dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCourse"
+                android:layout_width="14dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=" วิชา :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/coursename"
+                android:layout_width="257dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="ชื่อคออร์สเรียน"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="317dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="ราคา :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="86dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="0000"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtBath"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="บาท"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_round_rect_border"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="ใบเสร็จชำระเงิน"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="317dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="วันที่ :"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="274dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="วัน, เวลา"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="213dp"
+        android:hint="ชื่อไฟล์"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="193dp"
+        android:background="@drawable/custom_button_round_rect_border"
+        android:text="ยืนยันการชำระเงิน"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "166363441675",
+    "firebase_url": "https://tutorchat-ebca0.firebaseio.com",
+    "project_id": "tutorchat-ebca0",
+    "storage_bucket": "tutorchat-ebca0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166363441675:android:7f541ba5431b8644",
+        "android_client_info": {
+          "package_name": "com.example.peem16.eakqlearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166363441675-i2153l9e5tgcf7bvvuporshrsq05i9e8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peem16.eakqlearning",
+            "certificate_hash": "581516c62043255414cf3def025f06cfbe3ed02f"
+          }
+        },
+        {
+          "client_id": "166363441675-r4rgnr9r944d70jp8qehg9gt36phfr56.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "166363441675-r4rgnr9r944d70jp8qehg9gt36phfr56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1VOIGbi2lR4CTS8q8R6hJ3zMMl16wwUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166363441675-r4rgnr9r944d70jp8qehg9gt36phfr56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

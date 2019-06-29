@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin">
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="387dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="317dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/branner_eakq" />
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:background="@drawable/boxregis"
+            android:gravity="center_horizontal"
+            android:text='สถาบันสอนดนตรีและกวดวิชา EakQ (เอ็กคิว) "House of Learning" เปิดสอนเปียโน กีตาร์ ร้องเพลง ไวโอลิน กลอง เต้น แซกโซโฟน สอนเปียโนกลุ่ม สำหรับเด็ก หลักสูตรสอบเข้าเอกดนตรี มหาลัยศิลปากร มหิดล รังสิต กวดวิชา ภาษาอังกฤษ ภาษาจีน คณิตศาสตร์ ติวเข้ม 5 วิชาเข้า ม.1 และยังมีเครือข่ายธุรกิจอื่นๆอีกด้วย คือ จำหน่ายเครื่องดนตรี รับปรึกษาการเปิดสถาบันการศึกษา และเป็นตัวแทนจำหน่ายเปียโน FEURICE แต่เพียงผู้เดียวในประเทศไทย'
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtContact2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtContact3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="ติดต่อ"
+            android:textColor="#ef67a7"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtContact4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtContact5"
+            android:layout_width="317dp"
+            android:layout_height="55dp"
+            android:background="@drawable/boxregis"
+            android:gravity="center_horizontal"
+            android:text="179 ถ.โชคชัย4, เขตลาดพร้าว, กรุงเทพมหานคร. 10230 เบอร์โทรศัพท์: (+66)8-5905-8222 , (+66)2-044-0467"
+            android:textColor="#000000" />
+    </LinearLayout>
+</RelativeLayout>

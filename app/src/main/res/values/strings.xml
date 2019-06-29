@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="title_activity_main">Eakq</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="validate_pic"> กรุณาอัพโหลดรูป</string>
+
+    <string name="validate_le"> กรุณากรอก ระบุสาเหตุ</string>
+    <string name="hint">Example explaining how to scheduling repeating alarms in android using AlarmManager.</string>
+    <string name="validate_username"> กรุณากรอก ชื่อผู้ใช่</string>
+    <string name="validate_password"> กรุณากรอก รหัสผ่าน</string>
+    <string name="validate_first"> กรุณากรอก ชื่อ</string>
+    <string name="validate_last"> กรุณากรอก นามสกุล</string>
+
+    <string name="validate_age"> กรุณากรอก อายุ</string>
+    <string name="validate_email"> กรุณากรอก อีเมล์</string>
+    <string name="validate_phone"> กรุณากรอก เบอร์</string>
+    <string name="validate_address"> กรุณากรอก ที่อยู่</string>
+
+    <string name="pick_date"> Date</string>
+    <string name="pick_time"> Time</string>
+
+
+
+
+    <string name="radio1"> กรุณาประเมินข้อ1</string>
+    <string name="radio2"> กรุณาประเมินข้อ2</string>
+    <string name="radio3"> กรุณาประเมินข้อ3</string>
+    <string name="radio4"> กรุณาประเมินข้อ4</string>
+    <string name="radio5"> กรุณาประเมินข้อ5</string>
+
+
+    <string name="number"> กรุณาใส่คะแนนประเมิน</string>
+
+    <string name="number1"> กรุณาใส่คะแนนประเมิน 1-100</string>
+
+
+
+
+    <string name="result_text_default"> PLASE</string>
+
+</resources>
