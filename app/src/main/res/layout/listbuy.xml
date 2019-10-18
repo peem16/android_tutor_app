@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuRow"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bglogin">>
+    android:layout_height="50dp"
+    android:background="@drawable/dash_border"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
 
-    <ListView
-        android:id="@+id/listview"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/boxregis" />
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <ProgressBar
-        android:id="@+id/progressBar4"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="213dp" />
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="397dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

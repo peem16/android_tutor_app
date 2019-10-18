@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bglogin">
+    android:alpha="2"
+    android:background="@drawable/download">
 
     <RelativeLayout
         android:layout_width="477dp"
         android:layout_height="640dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -24,8 +25,8 @@
 
         <ImageView
             android:id="@+id/boxRegister"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/boxregis" />
 
@@ -35,10 +36,25 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="81dp"
-            android:text="สมัครสมาชิก"
-            android:textColor="#ef67a7"
-            android:textSize="18sp" />
+            android:layout_marginTop="30dp"
+            android:text="Register"
+            android:textColor="#1947EB"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/editTxtUsername"
+            android:layout_width="190dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtDate"
+            android:layout_alignTop="@+id/txtUsername"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FCF8F8"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="16"
+            android:textColor="#000000"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/txtUsername"
@@ -46,48 +62,25 @@
             android:layout_height="34dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="96dp"
-            android:layout_marginTop="129dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="88dp"
             android:gravity="center_vertical"
-            android:text="ชื่อผู้ใช้ :"
-            android:textColor="#000000"
-            android:textSize="12sp" />
-
-        <EditText
-            android:id="@+id/editTxtUsername"
-            android:layout_width="216dp"
-            android:maxLength="16"
-            android:layout_height="34dp"
-            android:layout_alignStart="@+id/editTxtAge"
-            android:layout_alignTop="@+id/txtUsername"
-            android:background="@drawable/rounded_border_edittext"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="#000000"
-            android:textSize="12sp" />
-
-        <TextView
-            android:id="@+id/txtPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="34dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/txtUsername"
-            android:layout_marginTop="171dp"
-            android:gravity="center_vertical"
-            android:text="รหัสผ่าน :"
+            android:text="Username"
             android:textColor="#000000"
             android:textSize="12sp" />
 
         <EditText
             android:id="@+id/editTxtPassword"
-            android:layout_width="216dp"
+            android:layout_width="190dp"
             android:layout_height="34dp"
-            android:maxLength="16"
             android:layout_alignStart="@+id/editTxtUsername"
             android:layout_alignTop="@+id/txtPassword"
-            android:background="@drawable/rounded_border_edittext"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FCF8F8"
             android:ems="10"
             android:inputType="textPassword"
+            android:maxLength="16"
             android:textColor="#000000"
             android:textSize="12sp" />
 
@@ -95,21 +88,24 @@
             android:id="@+id/txtFirstname"
             android:layout_width="wrap_content"
             android:layout_height="34dp"
-            android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/txtUsername"
-            android:layout_marginTop="212dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="171dp"
             android:gravity="center_vertical"
-            android:text="ชื่อ :"
+            android:text="FirstName"
             android:textColor="#000000"
             android:textSize="12sp" />
 
         <EditText
             android:id="@+id/editTxtFirstname"
-            android:layout_width="216dp"
+            android:layout_width="190dp"
             android:layout_height="34dp"
             android:layout_alignStart="@+id/editTxtUsername"
             android:layout_alignTop="@+id/txtFirstname"
-            android:background="@drawable/rounded_border_edittext"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FCF8F8"
             android:ems="10"
             android:inputType="textPersonName"
             android:textColor="#000000"
@@ -119,21 +115,24 @@
             android:id="@+id/txtLastname2"
             android:layout_width="wrap_content"
             android:layout_height="34dp"
-            android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/txtUsername"
-            android:layout_marginTop="253dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="212dp"
             android:gravity="center_vertical"
-            android:text="นามสกุล :"
+            android:text="LastName"
             android:textColor="#000000"
             android:textSize="12sp" />
 
         <EditText
             android:id="@+id/editTxtLastname"
-            android:layout_width="216dp"
+            android:layout_width="190dp"
             android:layout_height="34dp"
             android:layout_alignStart="@+id/editTxtUsername"
             android:layout_alignTop="@+id/txtLastname2"
-            android:background="@drawable/rounded_border_edittext"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FCF8F8"
             android:ems="10"
             android:inputType="textPersonName"
             android:textColor="#000000"
@@ -143,26 +142,26 @@
             android:id="@+id/txtAge"
             android:layout_width="wrap_content"
             android:layout_height="34dp"
-            android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/txtUsername"
-            android:layout_marginTop="294dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="253dp"
             android:gravity="center_vertical"
-            android:text="อายุ :"
+            android:text="BirthDate"
             android:textColor="#000000"
             android:textSize="12sp" />
 
-        <EditText
-            android:id="@+id/editTxtAge"
-            android:layout_width="53dp"
+        <TextView
+            android:id="@+id/editTxtDate"
+            android:layout_width="190dp"
             android:layout_height="34dp"
             android:layout_alignTop="@+id/txtAge"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="1dp"
             android:layout_toEndOf="@+id/txtAge"
-            android:background="@drawable/rounded_border_edittext"
+            android:background="#FCF8F8"
             android:ems="10"
             android:gravity="center_vertical"
-            android:inputType="number"
-            android:maxLength="2"
             android:textSize="12sp" />
 
         <RadioGroup
@@ -170,26 +169,21 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="152dp">
+            android:layout_marginEnd="150dp" />
 
-            <RadioButton
-                android:id="@+id/radioBtnMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="ผู้ชาย"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/radioBtnFemale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="ผู้หญิง"
-                android:textSize="12sp" />
-
-        </RadioGroup>
+        <EditText
+            android:id="@+id/editTxtEmail"
+            android:layout_width="190dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtUsername"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="304dp"
+            android:background="#FCF8F8"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/txtEmail"
@@ -197,44 +191,36 @@
             android:layout_height="34dp"
             android:layout_alignStart="@+id/txtUsername"
             android:layout_alignTop="@+id/editTxtEmail"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="0dp"
             android:gravity="center_vertical"
-            android:text="อีเมล์ :"
+            android:text="Email"
             android:textColor="#000000"
             android:textSize="12sp" />
 
-        <EditText
-            android:id="@+id/editTxtEmail"
-            android:layout_width="214dp"
-            android:layout_height="34dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/editTxtUsername"
-            android:layout_marginBottom="254dp"
-            android:background="@drawable/rounded_border_edittext"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:textColor="#000000"
-            android:textSize="12sp" />
-
-        <ImageView
-            android:id="@+id/imgPhone"
-            android:layout_width="20dp"
+        <TextView
+            android:id="@+id/txtEmail2"
+            android:layout_width="wrap_content"
             android:layout_height="34dp"
             android:layout_alignStart="@+id/txtUsername"
-            android:layout_alignTop="@+id/editPhone"
-            android:src="@drawable/ic_phone"
-            app:srcCompat="@drawable/ic_phone" />
+            android:layout_alignTop="@+id/editTxtEmail"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="41dp"
+            android:gravity="center_vertical"
+            android:text="Phone"
+            android:textColor="#000000"
+            android:textSize="12sp" />
 
-        <EditText
-            android:id="@+id/editPhone"
-            android:layout_width="213dp"
+        <TextView
+            android:id="@+id/txtEmail3"
+            android:layout_width="wrap_content"
             android:layout_height="34dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/editTxtUsername"
-            android:layout_marginBottom="212dp"
-            android:background="@drawable/rounded_border_edittext"
-            android:ems="10"
-            android:maxLength="10"
-            android:inputType="phone"
+            android:layout_alignStart="@+id/txtUsername"
+            android:layout_alignTop="@+id/editTxtEmail"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="83dp"
+            android:gravity="center_vertical"
+            android:text="Mobile"
             android:textColor="#000000"
             android:textSize="12sp" />
 
@@ -244,22 +230,140 @@
             android:layout_height="34dp"
             android:layout_alignStart="@+id/txtUsername"
             android:layout_alignTop="@+id/editTxtAddress"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-4dp"
             android:gravity="center_vertical"
-            android:text="ที่อยู่ :"
+            android:text="Address"
             android:textColor="#000000"
             android:textSize="12sp" />
 
         <EditText
             android:id="@+id/editTxtAddress"
-            android:layout_width="213dp"
+            android:layout_width="190dp"
             android:layout_height="34dp"
-            android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/editTxtUsername"
-            android:layout_marginBottom="169dp"
-            android:background="@drawable/rounded_border_edittext"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginBottom="174dp"
+            android:width="2dp"
+
+            android:background="#FCF8F8"
             android:ems="10"
-            android:maxLength="100"
             android:inputType="textPostalAddress"
+            android:maxLength="100"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/idcard"
+            android:layout_width="190dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtUsername"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="127dp"
+            android:background="#FCF8F8"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="100"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/company"
+            android:layout_width="190dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtUsername"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="82dp"
+            android:background="#FCF8F8"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="100"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtAddress2"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/txtUsername"
+            android:layout_alignTop="@+id/editTxtAddress"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="42dp"
+            android:gravity="center_vertical"
+            android:text="IDCard"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtAddress3"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/txtUsername"
+            android:layout_alignTop="@+id/editTxtAddress"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="93dp"
+            android:gravity="center_vertical"
+            android:text="company"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editMobile"
+            android:layout_width="190dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtUsername"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="219dp"
+            android:background="#FCF8F8"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editPhone2"
+            android:layout_width="190dp"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/editTxtUsername"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="259dp"
+            android:background="#FCF8F8"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignStart="@+id/txtUsername"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center_vertical"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+
+        <Button
+            android:id="@+id/btnCanRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/btnConRegister"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="106dp"
+            android:background="@drawable/custom_button_round_rect_border"
+            android:text="Close"
             android:textColor="#000000"
             android:textSize="12sp" />
 
@@ -268,22 +372,11 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="128dp"
+            android:layout_marginStart="-25dp"
+            android:layout_marginBottom="20dp"
             android:layout_toEndOf="@+id/txtPassword"
             android:background="@drawable/custom_button_round_rect_border"
-            android:text="ยืนยัน"
-            android:textColor="#000000"
-            android:textSize="12sp" />
-
-        <Button
-            android:id="@+id/btnCanRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/btnConRegister"
-            android:layout_marginEnd="144dp"
-            android:background="@drawable/custom_button_round_rect_border"
-            android:text="ออก"
+            android:text="Confirm"
             android:textColor="#000000"
             android:textSize="12sp" />
 

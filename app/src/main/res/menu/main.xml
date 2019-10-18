@@ -1,21 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
-
-    <item
-        android:id="@+id/menuhome"
-        android:icon="@drawable/ic_home"
-        android:title="Home"
-        app:showAsAction="ifRoom" />
-
-    <item
-        android:id="@+id/menunotification"
-        android:icon="@drawable/ic_notification"
-
-
-        android:title="refresh"
-        app:showAsAction="ifRoom" />
-
-
-</menu>
+    />

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bglogin">
+    android:background="@drawable/colorww">
 
     <ProgressBar
-        android:id="@+id/progressBar2"
+        android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,21 +20,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="wrap_content"
-            android:layout_height="162dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true">
-
-        </android.support.v4.view.ViewPager>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/logo" />
 
         <ListView
             android:id="@+id/listview"
             android:layout_width="match_parent"
-            android:layout_height="351dp"
-            android:layout_alignParentStart="true"
+            android:layout_height="517dp"
             android:layout_below="@+id/pager"
+            android:layout_alignParentStart="true"
             android:background="@drawable/boxregis" />
 
     </LinearLayout>

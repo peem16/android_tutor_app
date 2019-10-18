@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@drawable/colorww"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="197dp"
+        android:layout_marginRight="197dp"
+        android:layout_marginBottom="216dp"
+        android:text="เลือกประเภท" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnpurc"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignBaseline="@+id/btnmain"
+            android:layout_alignBottom="@+id/btnmain"
+            android:layout_marginLeft="54dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="61dp"
+            android:layout_toStartOf="@+id/showpass"
+            android:layout_toLeftOf="@+id/showpass"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_round_rect_border"
+            android:gravity="center_vertical|center"
+            android:text="Confirm"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btnmain" />
+
+        <TextView
+            android:id="@+id/btnmain"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="54dp"
+            android:layout_marginBottom="61dp"
+            android:layout_toEndOf="@+id/btnpurc"
+            android:layout_toRightOf="@+id/btnpurc"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_round_rect_border"
+            android:gravity="center_vertical|center"
+            android:text="Cancel"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="cause"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="4"
+        android:minLines="1" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:layout_marginBottom="152dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="software" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hardware" />
+    </RadioGroup>
+
+</RelativeLayout>

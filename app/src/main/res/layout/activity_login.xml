@@ -14,12 +14,13 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/gettyimages"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
@@ -27,17 +28,17 @@
             android:layout_width="242dp"
             android:layout_height="150dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/eakq" />
+            android:src="@drawable/maintenance" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/RelativeLayout2"
         android:layout_width="480dp"
         android:layout_height="640dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/bglogin"
+        android:layout_marginBottom="8dp"
+        android:background="#efefef"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
@@ -47,47 +48,48 @@
 
         <ImageView
             android:id="@+id/imgLogin"
-            android:src="@drawable/ic_user"
             android:layout_width="24dp"
             android:layout_height="34dp"
             android:layout_alignTop="@+id/editTxtUser"
-            android:layout_toStartOf="@+id/editTxtUser" />
+            android:layout_toStartOf="@+id/editTxtUser"
+            android:src="@drawable/ic_user" />
 
         <EditText
             android:id="@+id/editTxtUser"
             android:layout_width="219dp"
             android:layout_height="34dp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="22dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="21dp"
             android:layout_toEndOf="@+id/imgPass"
             android:ems="10"
-            android:hint="ชื่อผู้ใช้"
+            android:hint="Username"
             android:inputType="textPersonName"
             android:textColor="#000000"
             android:textColorLink="#000000"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/imgPass"
-            android:src="@drawable/ic_pass"
             android:layout_width="24dp"
             android:layout_height="34dp"
-            android:layout_alignParentStart="true"
             android:layout_alignTop="@+id/editTxtPass"
-            android:layout_marginStart="85dp" />
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="85dp"
+            android:src="@drawable/ic_pass" />
 
         <EditText
             android:id="@+id/editTxtPass"
             android:layout_width="219dp"
             android:layout_height="34dp"
-            android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/editTxtUser"
+            android:layout_alignParentTop="true"
             android:layout_marginTop="84dp"
             android:ems="10"
-            android:hint="รหัสผ่าน"
+            android:hint="Password"
             android:inputType="textPassword"
             android:textColor="#000000"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnLogin"
@@ -97,8 +99,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="119dp"
             android:layout_marginTop="148dp"
-            android:background="@drawable/custom_button_round_rect_border"
-            android:text="เข้าสู่ระบบ"
+            android:background="@drawable/custom_button_round_rect_border_diable"
+            android:text="Login"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -106,11 +108,11 @@
             android:id="@+id/btnRegister"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/btnLogin"
+            android:layout_alignParentEnd="true"
             android:layout_marginEnd="184dp"
-            android:background="@drawable/custom_button_round_rect_border"
-            android:text="สมัครสมาชิก"
+            android:background="@drawable/custom_button_round_rect_border_diable"
+            android:text="Register"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 

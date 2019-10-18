@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.peem16.eakqlearning">
+    package="com.example.peem16.samms">
 
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.VIBRATE" />
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
 
     <application
 
@@ -25,29 +17,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <!--<activity android:name=".MainActivitytime"-->
+        android:theme="@style/AppTheme.NoActionBar">
 
-            <!--android:label="@string/title_activity_main"-->
-            <!--android:theme="@style/AppTheme.NoActionBar">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+        <activity android:name="com.example.peem16.samms.LoginActivity"
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
-        <!--<activity android:name=".MainActivitytime"-->
-
-         <!--&gt;-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
-        <activity android:name=".MainActivity"
-
-            android:label="@string/title_activity_main"
+            android:label="samms"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,63 +30,17 @@
             </intent-filter>
         </activity>
 
-
-        <activity android:name=".Login" />
-        <activity android:name=".home" />
-        <activity android:name=".assShow" />
-
-        <activity android:name=".MainActivity_Login"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity android:name=".Register" />
-
-        <activity android:name=".showqr" />
-        <activity android:name=".Rollcall" />
-        <activity android:name=".Coures_detail" />
-        <activity android:name=".Scan_qr" />
-        <activity android:name=".List_Coures" />
-        <activity android:name=".UserEdit" />
-        <activity android:name=".assessment" />
-
-        <activity android:name=".Paymentmenu" />
-        <activity android:name=".Paymentreser" />
-        <activity android:name=".Paymentbuy" />
-        <activity android:name=".confirmpayreser" />
-        <activity android:name=".confirmpaybuy" />
-        <activity android:name=".listbuydetail" />
-        <activity android:name=".buydetail" />
-        <activity android:name=".asslist" />
-        <activity android:name=".testingShow" />
-        <activity android:name=".Messge" />
-
-        <activity android:name=".assstu_tutor_" />
-
-        <activity android:name=".menuasslisttutor" />
-        <activity android:name=".asslisttutor_stu_tutor" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Register"></activity>
+        <activity android:name=".EditProfile"></activity>
+        <activity android:name=".BuyDetail"></activity>
+        <activity android:name=".Basket"></activity>
+        <activity android:name=".Quatation"></activity>
+        <activity android:name=".Quatationdetail"></activity>
+        <activity android:name=".Mysystem"></activity>
+        <activity android:name=".MysystemDetail"></activity>
 
 
-        <activity android:name=".asslisttutor" />
-        <activity android:name=".assShowtutor" />
-
-        <activity android:name=".Chatmessage" />
-        <activity android:name=".Chat_Room" />
-        <activity android:name=".assessment_tutor" />
-
-
-        <activity
-            android:name=".ShowEvent"
-            android:theme="@android:style/Theme.Dialog"
-            >
-        </activity>
-
-        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
-
-        <service android:name="AlarmReceiver" ></service>
-
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>

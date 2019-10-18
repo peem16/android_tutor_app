@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorcc"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#d6d7d7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_button_round_rect_border_diable"
+
+            android:layout_height="wrap_content"
+            android:text="back" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btncontract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="548dp"
+        android:background="@drawable/custom_button_round_rect_border_diable"
+        android:text="contract" />
+
+    <TextView
+        android:id="@+id/txtnum"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:layout_marginBottom="564dp"
+
+        android:text="TextView"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="360dp"
+        android:text="TextView"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:textColor="#000000"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="305dp"
+        android:text="ชำระงวดที่3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:textColor="#000000"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="314dp"
+        android:layout_marginRight="314dp"
+        android:layout_marginBottom="305dp"
+        android:text="ชำระงวดที่1" />
+
+    <ProgressBar
+        android:id="@+id/bar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:layout_marginBottom="252dp" />
+
+    <ImageView
+        android:id="@+id/state3"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginBottom="240dp"
+        app:srcCompat="@drawable/status_cy_def" />
+
+    <ImageView
+        android:id="@+id/state2"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginRight="225dp"
+        android:layout_marginBottom="238dp"
+        app:srcCompat="@drawable/status_cy_def" />
+
+    <ImageView
+        android:id="@+id/state1"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="324dp"
+        android:layout_marginRight="324dp"
+        android:layout_marginBottom="236dp"
+        app:srcCompat="@drawable/status_cy_def" />
+
+    <ProgressBar
+        android:id="@+id/bar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="276dp"
+        android:layout_marginRight="276dp"
+        android:layout_marginBottom="252dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="219dp"
+        android:textColor="#000000"
+
+        android:layout_marginRight="219dp"
+        android:layout_marginBottom="305dp"
+        android:text="ชำระงวดที่2" />
+
+    <Button
+        android:id="@+id/btnpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="283dp"
+        android:layout_marginRight="283dp"
+        android:layout_marginBottom="133dp"
+        android:background="@drawable/custom_button_round_rect_border_diable"
+        android:text="Pay" />
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="133dp"
+
+        android:background="@drawable/custom_button_round_rect_border_diable"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#000000"
+        android:layout_marginBottom="334dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/statusp"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="205dp"
+        android:text="TextView"
+        android:textColor="#000000" />
+
+</RelativeLayout>
